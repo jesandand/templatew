@@ -364,8 +364,8 @@
                     </div>
                         <div class="col-lg-4 mt-3">
                         <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp19.000" value="140 Diamonds">
-                        <label for="Rp19.000" class="list-group-item"> 140 Diamond </label>
+                        <input type="radio" name="nominal" id="Rp18.500" value="140 Diamonds">
+                        <label for="Rp18.500" class="list-group-item"> 140 Diamond </label>
                         </div>
                     </div>
                         <div class="col-lg-4 mt-3">
@@ -406,14 +406,14 @@
                     </div>
                         <div class="col-lg-4 mt-3">
                         <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp94.000" value="720 Diamonds">
-                        <label for="Rp94.000" class="list-group-item"> 720 Diamond </label>
+                        <input type="radio" name="nominal" id="Rp93.000" value="720 Diamonds">
+                        <label for="Rp93.000" class="list-group-item"> 720 Diamond </label>
                         </div>
                     </div>
                         <div class="col-lg-4 mt-3">
                         <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp112.500" value="860 Diamonds">
-                        <label for="Rp112.500" class="list-group-item"> 860 Diamond </label>
+                        <input type="radio" name="nominal" id="Rp112.000" value="860 Diamonds">
+                        <label for="Rp112.000" class="list-group-item"> 860 Diamond </label>
                         </div>
                     </div>
                         <div class="col-lg-4 mt-3">
@@ -836,11 +836,11 @@
           <p class="text-danger">Jika data sudah benar, Silahkan pilih admin untuk melanjutkan pembayaran.
           </p>
                   <div class="col-4 col-sm-4 col-lg-4 p-1">
-                  <button type="button" class="btn btn-success w-100 m-0" disabled=""><i class="fab fa-whatsapp" aria-hidden="true"></i> </button>
+                  <button type="button" class="btn btn-success w-100 m-0" disabled=""><i class="fab fa-whatsapp" aria-hidden="true"></i> Ahmad</button>
               </a>
           </div>
                   <div class="col-4 col-sm-4 col-lg-4 p-1">
-                  <button type="button" class="btn btn-success w-100 m-0"><i class="fab fa-whatsapp" aria-hidden="true"></i> Kuh</button>
+                  <button type="button" class="btn btn-success w-100 m-0"><i class="fab fa-whatsapp" aria-hidden="true"></i> Kukuh</button>
               </a>
           </div>
                   <div class="col-4 col-sm-4 col-lg-4 p-1">
@@ -873,6 +873,18 @@
       $("#info2").html(str2);
       $("#info3").html(str3);
       $("#info4").html(str4);
+
+
+      if(id == "") {
+        toastr.error('Data ID kosong, silahkan di input',"Warning");
+      }
+
+      if(service == null) {
+        toastr.error('Nominal Belum Dipilih',"Warning");
+      }
+      if(payment == null) {
+        toastr.error('Pembayaran Belum Dipilih',"Warning");
+      }
   });
 </script>
 
@@ -903,7 +915,7 @@
             'ID : ' + input_id + '%0A' +
             'Order : ' + input_service + '%0A' +
             'Pembayaran : ' + input_payment + '%0A' +
-            'Total : ' + input_harga + '%0A%0A' + 'Tunggu Hingga Pembayaran Muncul :).';
+            'Total : ' + input_harga + '%0A%0A' + 'Tunggu Admin Agar Dibalas.';
   
         /* Whatsapp Window Open */
         window.open(checkout_whatsapp,'_blank');
