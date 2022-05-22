@@ -119,6 +119,171 @@
   transform: translate(-50%, -50%);
   font: 14px arial;
 }
+
+.kol {
+  padding-right: 6px;
+  padding-left: 6px;
+  }
+
+  .bg-bang {
+    background-color: #222736;
+}
+
+  .kuh-pgimg {
+            background-color:white;
+            border-radius: 3px;
+            border: 1px solid white;
+        }
+
+          .list-group-item {
+            user-select: none;
+        }
+        .list-group-item:last-child {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .list-group input[type="radio"] {
+            display: none;
+        }
+        .list-group1 input[type="radio"] {
+            display: none;
+        }
+        .list-group input[type="radio"]+.list-group-item {
+            text-align: center;
+            cursor: pointer;
+            background-color: #282c30;
+            color: #dcddeb;
+            border-color: transparent;
+            border: 2px solid #282c30;
+            font-size: 12px;
+        }
+
+        .nominal-price {
+            font-size: 10px;
+            text-align: left;
+        }
+
+        .bangjeff-prod {
+            /* font-weight:600; */
+            color: #ffffff;
+            /* padding: 0%; */
+            text-align: left;
+        }
+
+        .list-group input[type="radio"]+label>.row>.col>.row>.nominal-price {
+            color: #dee2e6;
+            /* font-style: bold; */
+            font-family: 'bangjeff-comic';
+            font-style: italic;
+        }
+        .list-group input[type="radio"]:checked+label>.row>.col>.row>.nominal-price {
+            color: #f6d759;
+            font-family: 'bangjeff-comic';
+            /* font-style: bold; */
+            font-style: italic;
+        }
+
+        .list-group input[type="radio"]+.list-group-item:before {
+            /* content: "\2713"; */
+            color: transparent;
+            font-weight: bold;
+            /* margin-right: 1em; */
+
+        }
+
+        .list-group input[type="radio"]+.list-group-item:hover {
+            cursor: pointer;
+            background-color: #adadad43;
+            color: #ffffff;
+            border-color: #adadad43;
+
+            font-size: 12px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .list-group input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }
+        .list-group input[type="radio"]:checked+.list-group-item:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 28px;
+            height: 26px;
+            content: "";
+            background: url("https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-others/verified.png") top/cover;
+            text-align: center;
+        }
+        .list-group input[type="radio"]:checked+.list-group-item {
+            color: #adadad43;
+            font-size: 12px;
+            border: 2px solid #c9c9c993;
+            box-shadow: 0 0 2.22222vw #ababab, inset 0 2.40741vw 8.05556vw #adadad43, inset 0 -8.24074vw 11.48148vw #adadad43;
+            overflow: hidden;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item {
+            background-color: #ffffff;
+            color: #fe6c17;
+            font-size: 12px;
+            display: block;
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+        .list-group1 input[type="radio"]+.list-group-item {
+            text-align: center;
+            cursor: pointer;
+            /* background-color: #e8e8e8;
+            color: #fe6c17; */
+            border-color: transparent;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+            font-size: 12px;
+            border-radius: 3px;
+            background: rgb(208, 208, 208);
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+        .list-group1 input[type="radio"]+.list-group-item:hover {
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #fe6c17;
+            border-color: #ffffff;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        .list-group1 input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }
+
+        .mt-bang3 {
+          margin-top: 1rem!important;
+        }
+
+        .row-bang {
+              --bs-gutter-x: 1.5rem;
+        }
+        
+                .bangjeff-dicek {
+            font-size: 9px;
+            font-style: italic;
+            color: #fe6c17;
+        }
+
+    .btn-kuh {
+      color: rgb(255, 255, 255);
+      background-color: #556ee6;
+    }
+
 </style>
 
 <!-- Loader -->
@@ -341,166 +506,376 @@
           </div>
 
 <!-- Nominal-->
-          <div class="row mt-3">
-            <div class="col">
-              <div class="card shadow">
-                <div class="card-header bg-primary">
-                  <h5 class="card-title text-light">Pilih Nominal</h5>
-                </div>
-                <div class="card-body bg-dark">
-                  <div id="tempatNominal">
-                    <div class="row row-cols-2">
-                      <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp9.500" value="70 Diamonds">
-                        <label for="Rp9.500" class="list-group-item"> 70 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp14.000" value="100 Diamonds">
-                        <label for="Rp14.000" class="list-group-item"> 100 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp18.500" value="140 Diamonds">
-                        <label for="Rp18.500" class="list-group-item"> 140 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp28.500" value="210 Diamonds">
-                        <label for="Rp28.500" class="list-group-item"> 210 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp37.000" value="280 Diamonds">
-                        <label for="Rp37.000" class="list-group-item"> 280 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp47.000" value="355 Diamonds">
-                        <label for="Rp47.000" class="list-group-item"> 355 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp57.000" value="425 Diamonds">
-                        <label for="Rp57.000" class="list-group-item"> 425 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp67.000" value="500 Diamonds">
-                        <label for="Rp67.000" class="list-group-item"> 500 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp87.000" value="635 Diamonds">
-                        <label for="Rp87.000" class="list-group-item"> 635 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp93.000" value="720 Diamonds">
-                        <label for="Rp93.000" class="list-group-item"> 720 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp112.000" value="860 Diamonds">
-                        <label for="Rp112.000" class="list-group-item"> 860 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp122.000" value="930 Diamonds">
-                        <label for="Rp122.000" class="list-group-item"> 930 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp130.000" value="1.000 Diamonds">
-                        <label for="Rp130.000" class="list-group-item"> 1.000 Diamond </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp186.000" value="1.440 Diamonds">
-                        <label for="Rp186.000" class="list-group-item"> 1.440 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp255.000" value="2.000 Diamonds">
-                        <label for="Rp255.000" class="list-group-item"> 2000 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp348.000" value="2.720 Diamonds">
-                        <label for="Rp348.000" class="list-group-item"> 2.720 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp385.000" value="3.000 Diamonds">
-                        <label for="Rp385.000" class="list-group-item"> 3.000 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp510.000" value="4.000 Diamonds">
-                        <label for="Rp510.000" class="list-group-item"> 4.000 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp930.000" value="7.290 Diamonds">
-                        <label for="Rp930.000" class="list-group-item"> 7.290 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp4.500.000" value="36.500 Diamonds">
-                        <label for="Rp4.500.000" class="list-group-item"> 36.500 Diamonds </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp28.500 " value="Member Mingguan">
-                        <label for="Rp28.500 " class="list-group-item"> Member Mingguan </label>
-                        </div>
-                    </div>
-                        <div class="col-lg-4 mt-3">
-                        <div class="list-group">
-                        <input type="radio" name="nominal" id="Rp142.500" value="Member Bulanan">
-                        <label for="Rp142.500" class="list-group-item"> Member Bulanan </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="row mt-3">
+  <div class="col">
+  <div class="card bg-dark">
+  <div class="card-header bg-primary">
+  <h5 class="card-title text-light">Pilih Nominal</h5>
+  </div>
+  <div class="card-body">
+  <div id="tempatNominal">
+  <div class="row row-cols-2 row-cols-md-3 g-2 ">
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp9.500" value="70 Diamonds" data-type="diamond">
+  <label for="Rp9.500" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">70 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp9.500</div>
+  </div>
+  </div>
+  </div>
+  
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp14.000" value="172 Diamonds" data-type="diamond">
+  <label for="Rp14.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">100 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp14.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp19.000" value="140 Diamonds" data-type="diamond">
+  <label for="Rp19.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">140 Diamonds</div>
+  </div>
+  <div class="row">
+   <div class="col nominal-price">Rp19.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp28.500" value="210 Diamonds" data-type="diamond">
+  <label for="Rp28.500" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">210 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp28.500</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp38.000" value="280 Diamonds" data-type="diamond">
+  <label for="Rp38.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">280 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp38.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp47.000" value="355 Diamonds" data-type="diamond">
+  <label for="Rp47.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">355 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp47.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp56.500" value="425 Diamonds" data-type="diamond">
+  <label for="Rp56.500" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">425 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp56.500</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp67.000" value="500 Diamonds" data-type="diamond">
+  <label for="Rp67.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">500 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp67.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp85.000" value="635 Diamonds" data-type="diamond">
+  <label for="Rp85.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">635 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp85.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp93.000" value="720 Diamonds" data-type="diamond">
+  <label for="Rp93.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">720 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp93.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp112.000" value="860 Diamonds" data-type="diamond">
+  <label for="Rp112.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">860 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp112.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp121.500" value="930 Diamonds" data-type="diamond">
+  <label for="Rp121.500" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">930 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp121.500</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp131.000" value="1.000 Diamonds" data-type="diamond">
+  <label for="Rp131.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">1.000 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp131.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp186.000" value="1.450 Diamonds" data-type="diamond">
+  <label for="Rp186.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">1.450 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp186.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp254.000" value="2.000 Diamonds" data-type="diamond">
+  <label for="Rp254.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">2.000 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp254.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp508.000" value="4.000 Diamonds" data-type="diamond">
+  <label for="Rp508.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">4.000 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp508.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp930.000" value="7.290 Diamonds" data-type="diamond">
+  <label for="Rp930.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">7.290 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp930.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp4.650.000" value="36.500 Diamonds" data-type="diamond">
+  <label for="Rp4.650.000" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">36.500 Diamonds</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp4.650.000</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp28.500 " value="Membership Mingguan" data-type="diamond">
+  <label for="Rp28.500 " class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">Membership Mingguan</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp28.500</div>
+  </div>
+  </div>
+  </div>
+  </label>
+  </div>
+  </div>
+  <div class="col-lg-4 mt-3">
+  <div class="list-group  h-100">
+  <input type="radio" name="nominal" id="Rp142.500" value="Membership Bulanan" data-type="diamond">
+  <label for="Rp142.500" class="list-group-item h-100">
+  <div class="row">
+  <div class="col">
+  <div class="row">
+  <div class="col bangjeff-prod">Membership Bulanan</div>
+  </div>
+  <div class="row">
+  <div class="col nominal-price">Rp142.500</div>
+  </div>
+  </div>
+  </div>
+  
+  </label>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
 <!-- JavaScript Harga-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
   $("input[name=nominal]").click(function () {
       var service  = $("input[name=nominal]:checked").attr("id");
       var str0   = service;
       
       $("#harga").html(str0);
   });
-</script>
+</script>-->
 
 <!-- Tampilan Harga-->
-<div class="row mt-3">
+<!--<div class="row mt-3">
   <div class="col">
     <div class="card shadow">
         <div class="card-header bg-primary">
@@ -515,275 +890,294 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
 <!-- Metode Pembayaran-->
-          <div class="row mt-3">
-            <div class="col">
-              <div class="card shadow">
-                <div class="card-header bg-primary">
-                  <h5 class="card-title text-light">Pilih Metode Pembayaran</h5>
-                </div>
-                <div class="card-body bg-dark">
-                  <div class="area-list-payment-method">
+<div class="row mt-3">
+  <div class="col">
+    <div class="card">
+      <div class="card-header bg-primary">
+        <h5 class="card-title text-light">Pilih Metode Pembayaran</h5>
+      </div>
+      <div class="card-body bg-dark">
+        <div class="area-list-payment-method">
 
-                      <!-- Awal -->
-                       <!--Transfer Bank -->
-                      <div class="child-box payment-drawwer shadow">
-                      <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
-                        <div class="left">
-                          <b>
-                            <i class="fas fa-landmark text-white"></i>                   
-                            <b class="text-white">Transfer Bank </b>
-                        </div>
-                        <div class="right"></div>
-                      </div>
-
-                      <div class="button-action-payment" style="display:none;">
-                        <ul>
-
-                          <!--BRI -->
-                            <li>
-                            <input type="radio" name="paymentMethod" id="paymentMethod14" value="Transfer Bank - BRI">
-                              <label for="paymentMethod14" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                  <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bri.png">
-                                </div>
-                                <b id="bca"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> Bank BRI<br>Pengecekan 2-10 Menit</div>
-                              </label>
-                          </li>                                                                                                                                                                                                                         </ul>
-                      </div>
-
-                      <div class="short-payment-support-info bg-success" onclick="openPaymentDrawer(this)">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bri.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <a class="open-button-action-payment">
-                          <i class="fas fa-chevron-down"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                      <!--E-wallet -->
-                      <div class="child-box payment-drawwer shadow">
-                      <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
-                        <div class="left">
-                          <b>
-                            <i class="fas fa-wallet text-white"></i>                                    
-                            <b class="text-white">QRIS </b>
-                        </div>
-                        <div class="right"></div>
-                      </div>
-                      <div class="button-action-payment" style="display:none;">
-                        <ul>
-
-                          <!--QRIS -->
-                          <li>                   
-                            <input type="radio" name="paymentMethod" id="paymentMethod1" value="QRIS">
-                              <label for="paymentMethod1" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                    <img src="https://ramadhankukuh.github.io/web/image-payment/qris.png" >
-                                </div>
-                                <b id="qris"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> Qris<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="short-payment-support-info bg-success" onclick="openPaymentDrawer(this)">
-                      <img src="https://ramadhankukuh.github.io/web/image-payment/qris.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-
-                          <a class="open-button-action-payment">
-                          <i class="fas fa-chevron-down"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <!--Merchant -->
-                      <div class="child-box payment-drawwer shadow">
-                      <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
-                        <div class="left">
-                          <b>
-                            <i class="fas fa-store text-white"></i>                     
-                            <b class="text-white">Convenience Store </b>
-                        </div>
-                        <div class="right"></div>
-                      </div>
-                      <div class="button-action-payment" style="display:none;">
-                        <ul>
-
-                          <!--Alfamart -->
-                          <li>                         
-                            <input type="radio" name="paymentMethod" id="paymentMethod11" value="Alfamart - Bukalapak">
-                            <label for="paymentMethod11" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamart.png">
-                                </div>
-                                <b id="cstore"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> Alfamart<br>Pengecekan 2-5 Menit<br>Biaya Admin 2.000</div>
-                              </label>
-                          </li>
-
-                          <!--Alfamidi -->
-                            <li>                         
-                            <input type="radio" name="paymentMethod" id="paymentMethod12" value="Alfamidi - Bukalapak">
-                            <label for="paymentMethod12" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamidi.png">
-                                </div>
-                                <b id="Alfamidi"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> Alfamidi<br>Pengecekan 2-5 Menit<br>Biaya Admin 2.000</div>
-                              </label>
-                          </li>
-
-                          <!--Indomaret -->
-                          <li>                    
-                            <input type="radio" name="paymentMethod" id="paymentMethod13" value="Indomaret - Shopee">
-                            <label for="paymentMethod13" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/indomaret.png">
-                                </div>
-                                <b id="cstore"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> Indomaret<br>Pengecekan 1-3 Menit<br>Tidak Ada Biaya Admin Untuk Pemesanan <b>Diatas</b> 20.000 <br><br>(Untuk <b>Dibawah</b> 20.000 Dikenakan Biaya Admin 2.000)</div>
-                              </label>
-                          </li>
-                         </ul>
-                      </div>
-
-                      <div class="short-payment-support-info bg-success" onclick="openPaymentDrawer(this)">
-                        <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamart.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                        <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamidi.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                        <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/indomaret.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <a class="open-button-action-payment">
-                          <i class="fas fa-chevron-down"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                      <!--Virtual Account -->
-                      <div class="child-box payment-drawwer shadow">
-                      <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
-                        <div class="left">
-                          <b>
-                            <i class="far fa-credit-card text-white"></i>                     
-                            <b class="text-white"> Virtual Account </b>
-                        </div>
-                        <div class="right"></div>
-                      </div>
-                      <div class="button-action-payment" style="display:none;">
-                        <ul>
-                                                                                                                                                                                                  <li>
-                            <!--BCA -->   
-                            <input type="radio" name="paymentMethod" id="paymentMethod4" value="BCA VA">
-                              <label for="paymentMethod4" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                  <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bca.png">
-                                </div>
-                                <b id="va"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> BCA Virtual Account<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-
-                            <!--BRI -->
-                          <li>              
-                            <input type="radio" name="paymentMethod" id="paymentMethod5" value="BRI VA">
-                            <label for="paymentMethod5" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/briva.png">
-                                </div>
-                                <b id="va"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> BRI Virtual Account<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-
-                            <!--BNI -->
-                          <li>              
-                            <input type="radio" name="paymentMethod" id="paymentMethod6" value="BNI VA">
-                            <label for="paymentMethod6" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bniva.png">
-                                </div>
-                                <b id="va"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> BNI Virtual Account<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-
-                            <!--MANDIRI -->
-                          <li>              
-                            <input type="radio" name="paymentMethod" id="paymentMethod7" value="MANDIRI VA">
-                            <label for="paymentMethod7" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/mandiri.png">
-                                </div>
-                                <b id="va"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> MANDIRI Virtual Account<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-
-                            <!--CIMB -->
-                          <li>              
-                            <input type="radio" name="paymentMethod" id="paymentMethod8" value="CIMB VA">
-                            <label for="paymentMethod8" class="payment-item">
-                              <div class="info-top">
-                                <div>
-                                <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/cimb.png">
-                                </div>
-                                <b id="va"></b>
-                              </div>
-                                                            
-                              <div class="info-bottom"> CIMB Virtual Account<br>Pengecekan Otomatis</div>
-                              </label>
-                          </li>
-                         </ul>
-                      </div>
-                      <div class="short-payment-support-info bg-success" onclick="openPaymentDrawer(this)">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bniva.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bca.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/briva.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/mandiri.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">
-                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/cimb.png" alt="" class="m-1" style="border-radius: 1px" id="paymentMethodIMG-cekmutasicoid-bca">>
-                                                                            <a class="open-button-action-payment">
-                          <i class="fas fa-chevron-down"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                                          <!-- akhir -->
-                  </div>
-                </div>
+            <!-- Awal -->
+             <!--Transfer Bank -->
+            <div class="child-box payment-drawwer">
+            <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
+              <div class="left">
+                <b>
+                  <i class="fas fa-landmark text-white"></i>                   
+                  <b class="text-white">Transfer Bank </b>
               </div>
+              <div class="right"></div>
+            </div>
+
+            <div class="button-action-payment" style="display:none;">
+              <ul>
+
+                <!--BRI -->
+                  <li>
+                  <input type="radio" name="paymentMethod" id="paymentMethod14" value="Transfer Bank - BRI">
+                    <label for="paymentMethod14" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                        <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bri.png">
+                      </div>
+                      <b id="bca"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> Bank BRI<br>Pengecekan 2-10 Menit</div>
+                    </label>
+                </li>                                                                                                                                                                                                                         </ul>
+            </div>
+
+            <div class="short-payment-support-info" onclick="openPaymentDrawer(this)">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bri.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <a class="open-button-action-payment">
+                <i class="fas fa-chevron-down"></i>
+              </a>
             </div>
           </div>
+
+            <!--E-wallet -->
+            <div class="child-box payment-drawwer">
+            <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
+              <div class="left">
+                <b>
+                  <i class="fas fa-wallet text-white"></i>                                    
+                  <b class="text-white">QRIS </b>
+              </div>
+              <div class="right"></div>
+            </div>
+            <div class="button-action-payment" style="display:none;">
+              <ul>
+
+                <!--QRIS -->
+                <li>                   
+                  <input type="radio" name="paymentMethod" id="paymentMethod1" value="QRIS">
+                    <label for="paymentMethod1" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                          <img src="https://ramadhankukuh.github.io/web/image-payment/qris.png" >
+                      </div>
+                      <b id="qris"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> Scan Qris<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+                
+                <!--GoPay Transfer-->
+                <li>                   
+                  <input type="radio" name="paymentMethod" id="paymentMethod69" value="GoPay Transfer">
+                    <label for="paymentMethod69" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                          <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/gopay.png" >
+                      </div>
+                      <b id="qris"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> GoPay Transfer<br>Pengecekan Otomatis<br>Khusus Yang Sudah Di Upgrade</div>
+                    </label>
+                </li>
+              </ul>
+            </div>
+            <div class="short-payment-support-info" onclick="openPaymentDrawer(this)">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/ovo.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/gopay.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/dana.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/linkaja.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/shoopepay.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+
+                <a class="open-button-action-payment">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Merchant -->
+          <div class="child-box payment-drawwer">
+            <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
+              <div class="left">
+                <b>
+                  <i class="fas fa-store text-white"></i>                     
+                  <b class="text-white">Convenience Store </b>
+              </div>
+              <div class="right"></div>
+            </div>
+            <div class="button-action-payment" style="display:none;">
+              <ul>
+
+                <!--Alfamart -->
+                <li>                         
+                  <input type="radio" name="paymentMethod" id="paymentMethod11" value="Alfamart - Bukalapak">
+                  <label for="paymentMethod11" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamart.png">
+                      </div>
+                      <b id="cstore"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> Alfamart<br>Pengece kan 2-5 Menit<br>Biaya Admin 2.000</div>
+                    </label>
+                </li>
+
+                <!--Alfamidi -->
+                  <li>                         
+                  <input type="radio" name="paymentMethod" id="paymentMethod12" value="Alfamidi - Bukalapak">
+                  <label for="paymentMethod12" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamidi.png">
+                      </div>
+                      <b id="Alfamidi"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> Alfamidi<br>Pengecekan 2-5 Menit<br>Biaya Admin 2.000</div>
+                    </label>
+                </li>
+
+                <!--Indomaret -->
+                <li>                    
+                  <input type="radio" name="paymentMethod" id="paymentMethod13" value="Indomaret - Shopee">
+                  <label for="paymentMethod13" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/indomaret.png">
+                      </div>
+                      <b id="cstore"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> Indomaret<br>Pengecekan 1-3 Menit<br>Tidak Ada Biaya Admin Untuk Pemesanan <b>Diatas</b> 20.000 <br><br>(Untuk <b>Dibawah</b> 20.000 Dikenakan Biaya Admin 2.000)</div>
+                    </label>
+                </li>
+               </ul>
+            </div>
+
+            <div class="short-payment-support-info" onclick="openPaymentDrawer(this)">
+              <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamart.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+              <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/alfamidi.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+              <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/indomaret.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <a class="open-button-action-payment">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+
+            <!--Virtual Account -->
+            <div class="child-box payment-drawwer">
+            <div class="header short-payment-support-info-head" onclick="openPaymentDrawer(this)">
+              <div class="left">
+                <b>
+                  <i class="far fa-credit-card text-white"></i>                     
+                  <b class="text-white"> Virtual Account </b>
+              </div>
+              <div class="right"></div>
+            </div>
+            <div class="button-action-payment" style="display:none;">
+              <ul>
+                                                                                                                                                                                        <li>
+                  <!--BCA -->   
+                  <input type="radio" name="paymentMethod" id="paymentMethod4" value="BCA VA">
+                    <label for="paymentMethod4" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                        <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bca.png">
+                      </div>
+                      <b id="va"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> BCA Virtual Account<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+
+                  <!--BRI -->
+                <li>              
+                  <input type="radio" name="paymentMethod" id="paymentMethod5" value="BRI VA">
+                  <label for="paymentMethod5" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/briva.png">
+                      </div>
+                      <b id="va"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> BRI Virtual Account<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+
+                  <!--BNI -->
+                <li>              
+                  <input type="radio" name="paymentMethod" id="paymentMethod6" value="BNI VA">
+                  <label for="paymentMethod6" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bniva.png">
+                      </div>
+                      <b id="va"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> BNI Virtual Account<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+
+                  <!--MANDIRI -->
+                <li>              
+                  <input type="radio" name="paymentMethod" id="paymentMethod7" value="MANDIRI VA">
+                  <label for="paymentMethod7" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/mandiri.png">
+                      </div>
+                      <b id="va"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> MANDIRI Virtual Account<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+
+                  <!--CIMB -->
+                <li>              
+                  <input type="radio" name="paymentMethod" id="paymentMethod8" value="CIMB VA">
+                  <label for="paymentMethod8" class="payment-item">
+                    <div class="info-top">
+                      <div>
+                      <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/cimb.png">
+                      </div>
+                      <b id="va"></b>
+                    </div>
+                                                  
+                    <div class="info-bottom"> CIMB Virtual Account<br>Pengecekan Otomatis</div>
+                    </label>
+                </li>
+               </ul>
+            </div>
+            <div class="short-payment-support-info" onclick="openPaymentDrawer(this)">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bniva.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/bca.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/briva.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/mandiri.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">
+            <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-payment/cimb.png" alt="" class="m-1 kuh-pgimg" id="paymentMethodIMG-cekmutasicoid-bca">>
+                                                                  <a class="open-button-action-payment">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+
+                                <!-- akhir -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
           <div class="row mt-3">
             <div class="col-lg-12 clearfix">
               <div class="w-100">
-                <button class="btn btn-primary w-100 btn-lg" type="submit" id="submit" data-toggle="modal" data-target="#exampleModalCenter">
+                <button class="btn btn-kuh w-100 btn-lg" type="submit" id="submit" data-toggle="modal" data-target="#exampleModalCenter">
                   <i class="fas fa-cart-arrow-down"></i> Order Now </button>
                 <br>
               </div>
@@ -927,8 +1321,8 @@
 </script>
 	
 	<!--Footer-->
-<footer class="footer bg-dark">
-  <div class="row bg-dark">
+<footer class="footer bg-bang">
+  <div class="row bg-bang">
   <div class="col-lg-6">
   <img src="https://ramadhankukuh.github.io/web-assets/assets-topup/img/img-others/logo.png" alt="LOGO" style="float:left;margin-left:2%;height:40px; width:40px; " class="bi me-2">
   <h5 class="text-white text-uppercase mt-2" style="margin:0">RAMADHANKUKUH.SHOP</h5>
@@ -1014,6 +1408,31 @@
 
 </div>
 <!-- END layout-wrapper -->
+<div class="fab-container">
+  <div class="fab fab-icon-holder">
+  <img src="https://bv2shop.com/assets/img/gambar/819744264825090.png" class="img-chat" alt="">
+  </div>
+  <ul class="fab-options">
+  <li>
+  <a href="https://instagram.com/ramadhankukuh" class="text-decoration-none" target="_blank">
+  <div class="fab-icon-holder" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
+  <i class="fab fa-instagram"></i>
+  </div>
+  </a>
+  </li>
+  <li>
+  <a href="https://api.whatsapp.com/send?phone=12816245470" class="text-decoration-none" target="_blank">
+  <div class="fab-icon-holder" style="background-color: #25D366;">
+  <i class="fab fa-whatsapp"></i>
+  </div>
+  </a>
+  </li>
+  <li>
+  </ul>
+  <a href="#" class="act-btn-top text-decoration-none" onclick="toTop()" style="display: none; background-color: #bd4cae; bottom: 19px;">
+  <i class="fas fa-angle-up mt-2"></i>
+  </a>
+  </div>
 
 <!-- JAVASCRIPT -->
 <script src="https://ramadhankukuh.github.io/web-assets/assets-topup/topup/js/jquery.min.js"></script>
@@ -1055,6 +1474,25 @@
 <!-- toastr init -->
 <script src="https://ramadhankukuh.github.io/web-assets/assets-topup/topup/js/toastr.init.js"></script>
 
+<script type="text/javascript">
+  mybutton = document.querySelector(".act-btn-top");
+  window.onscroll = function() {
+      scrollFunc()
+  };
+
+  function scrollFunc() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
+  }
+
+  function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+</script>
 
 <script>
 $(document).ready(function (){
@@ -1107,7 +1545,7 @@ $(document).ready(function (){
 }
 </script>
 
-<script>
+<!--<script>
   $(document).ready(function(){
     let _tgl = new Date();
     let hours = _tgl.getHours();
@@ -1115,7 +1553,8 @@ $(document).ready(function (){
         toastr.info("Pembayaran Transfer Bank BRI, BNI, Mandiri, BCA offline dari jam 22:00 - 03:00 WIB", "Informasi");
         }
     });
-</script>
+</script>-->
+
   <script>
   	$(document).ready(function(){
     let _tgl = new Date();
