@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuh Personal Web</title>
+    <title>Kukuh Personal Web</title>
+    <meta content="Website Gabut Banh" name="description" />
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -21,6 +22,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
           <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+          
+        <!-- Swall Modal -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7658086472874944" crossorigin="anonymous"></script>
     <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
@@ -347,7 +351,22 @@ $(document).ready(function() {
         <span>Created By <a href="./gabut">Kuh</a> | <span class="far fa-copyright"></span> <script>document.write(new Date().getFullYear())</script> All rights reserved.</span> 
     </footer>
 
-
+<!-- Waktunya bang -->
+<script>
+  	$(document).ready(function(){
+    let _tgl = new Date();
+    let hr = _tgl.getHours();
+  if (hr >= 0 && hr < 12) {
+swal("SELAMAT PAGI", "Jika kamu ingin mewujudkan impianmu, hal pertama yang harus dilakukan adalah bangun dari mimpimu", "success"); 
+ } else if (hr >= 12 && hr < 15) {
+swal("SELAMAT SIANG", "Semoga siang harimu menyenangkan dan semua mimpimu menjadi kenyataan", "success"); 
+ } else if (hr >= 15 && hr <= 18) {
+swal("SELAMAT SORE", "Jadilah seperti senja di sore hari yang kehadirannya selalu membuat ketenangan dan kepergiannya selalu membuat kerinduan", "success"); 
+} else {
+swal("SELAMAT MALAM", "Tidur Bro, jomblo ngapain begadang. Kasian tuh lampu yang nemenin sampai pagi", "success"); 
+}
+});
+</script>
 
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
